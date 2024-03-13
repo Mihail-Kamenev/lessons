@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Варіант №3 !! Основний !! (підключення окремого файлу) -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 3</title>
+		<!-- Варіант №1 (тег style) -->
+		<!-- 
+		<style>
+			div{
+				color: blue;
+			}
+		</style>
+		 -->
+	</head>
+	<body>
+		<!-- Варіант №2 (атрибут style) -->
+		<!-- 
+		<p style="color: blue;">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ea vel dolor, recusandae quibusdam iusto optio deserunt qui, beatae, quisquam nam laudantium incidunt minima voluptatibus eum deleniti nulla ipsum soluta.
+		</p>
+		 -->
+		<div class="lesson">
+			<h1 class="title">Заголовок</h1>
+			<p style="color: brown;" id="some-id">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo ullam corrupti, necessitatibus sapiente possimus amet, quae perspiciatis odio numquam eum dolor consectetur laborum porro autem cumque praesentium neque ea!
+			</p>
+			<h2 class="title">ПідЗаголовок</h2>
+			<img src="img/honey.jpg" alt="Image">
+			<ul>
+				<li>Пункт</li>
+				<li>Пункт</li>
+				<li>Пункт</li>
+				<li>Пункт</li>
+				<li>Пункт</li>
+			</ul>
+			<h3 class="title">ПідЗаголовок</h3>
+			<div class="text">
+				<p>
+					Lorem <a href="#">ipsum dolor</a> sit amet consectetur adipisicing elit. Ipsum nemo ullam corrupti, necessitatibus sapiente possimus amet, quae perspiciatis odio numquam eum dolor consectetur laborum porro autem cumque praesentium neque ea!
+				</p>
+			</div>
+			<div class="page">
+				<p class="page__text text">
+					Lorem ipsum, dolor sit amet <span class="text">consectetur</span> adipisicing elit. Deleniti, eum itaque cumque porro aliquam id enim unde dignissimos veritatis maxime culpa ea? Beatae, laboriosam pariatur. Fuga aliquid similique reiciendis nesciunt?
+				</p>
+			</div>
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, amet cumque? Esse delectus rem eos vitae laborum et adipisci quia illum dicta nesciunt excepturi deleniti veritatis aut, repellendus qui! Perferendis.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, amet cumque? Esse delectus rem eos vitae laborum et adipisci quia illum dicta nesciunt excepturi deleniti veritatis aut, repellendus qui! Perferendis.
+		</p>
+		<div class="text">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. At, blanditiis commodi ipsam, perspiciatis et esse quisquam quae asperiores vitae necessitatibus ducimus sunt maiores quidem sit, magnam id nostrum. Quasi, dicta.
+		</div>
+
+		<!------------------------- Атрибут class --------------------------->
+		<!-- 
+			Зв'язує CSS стіли з HTML-тегами
+			Використовується для класифікації (групування)
+			HTML-тегів з метою надання їм певних стилів.
+		 -->
+		<!-- 
+			Правила написання імен класів: 
+			1) Англійська мова (Приклад: title)
+			2) Нижній регістр (Приклад: title)
+			3) Пробіли замінюємо на дефіс (Приклад: big-title)
+			4) Ім'я класу вільне, але має відображати що виводить HTML-елемент 
+				та бути адекватним
+			5) Назва класу НЕ МОЖЕ починатись з цифри та спец. символив
+		-->
+
+		<!-- Приклади: -->
+		<!-- 
+		<a href="#" class="link">Text</a>
+		<div class="block"></div>
+		<h1 class="title"></h1>
+		<h2 class="sub-title"></h2>
+		<ul class="list">
+			<li class="item"></li>
+		</ul>
+		 -->
+
+		<!-- Для бекенду гарно не задавати класи текстовим елементам -->
+
+		<!-- 
+		<div class="article">
+			<h2></h2>
+			<p>
+				Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+		</div>
+		 -->
+
+		<!-- 
+			Один клас може застосовуватись 
+			до багатьох HTML-тегів 
+		-->
+		<!-- 
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<a href="#" class="block"></a>
+		<a href="#" class="block"></a>
+		<a href="#" class="block"></a>
+		<a href="#" class="block"></a>
+		<a href="#" class="block"></a>
+		<ul class="block">
+			<li class="item"></li>
+		</ul>
+		 -->
+
+		<!-- 
+			Для одного HTML-тегу може бути додано безліч 
+			значеннь атрибуту class (через пробіл)
+		 -->
+		<!-- 
+		<div class="block">
+			<h1 class="block__title title"></h1>
+		</div>
+		 -->
+
+		<!-- Це два класи big та title -->
+		<!-- <h1 class="big title"></h1> -->
+
+		<!-- Це один клас big-title -->
+		<!-- <h1 class="big-title"></h1> -->
+
+		<!-- ЧАСТІ ПОМИЛКИ---------------------------------- -->
+
+		<!-- Приклад шляху для зображень -->
+		<!-- Перед назвою папки img нічого ставити не треба! -->
+		<!-- ВІРНО -->
+		<!-- <img src="img/honey.jpg" alt="Honey"> -->
+		<!-- НЕ ВІРНО -->
+		<!-- <img src="/img/honey.jpg" alt="Honey"> -->
+
+		<!-- Вкладенність списків -->
+		<!-- ВІРНО -->
+		<!-- <ul> -->
+		<!-- Тут ми нічого не пишеко окрім li -->
+		<!-- <li> -->
+		<!-- Тут ми можемо писати інші теги у тому числі нові списки -->
+		<!-- 
+				<ol>
+					<li></li>
+					 -->
+		<!-- .... -->
+		<!-- <li></li> -->
+		<!-- 
+				</ol>
+			</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		 -->
+
+		<!-- НЕ ВІРНО -->
+		<!-- 
+		<ul>
+			<li></li>
+			<li></li>
+			<ul>
+				<li></li>
+			</ul>
+			<li></li>
+			<li></li>
+		</ul>
+		 -->
+
+		<!-- 
+			Тег BR використовується лише 
+			для переводу тексту у новий рядок. 
+			Писати два і більше BR підряд для 
+			емітації відступу не можна
+		-->
+		<!-- ВІРНО -->
+		<!-- 
+		<p>
+			Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Molestiae adipisci earum cum corporis inventore perspiciatis ex ipsa labore quisquam atque asperiores alias eum perferendis fuga minus, mollitia quibusdam obcaecati. Sint.
+		</p>
+		 -->
+
+		<!-- НЕ ВІРНО -->
+		<!-- 
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repudiandae pariatur quam odit eum accusamus alias officia inventore est totam. Distinctio ipsum quas veniam eum eius. Unde rerum molestias recusandae.
+		</p>
+		<br>
+		<br>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		 -->
+
+	</body>
+</html>
