@@ -1,0 +1,51 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+.lesson {
+	color: brown;
+}
+.lesson  div{
+	color: black;
+}
+.lesson > .text{
+	color: yellow;
+}
+.title {
+	color: red;
+}
+.text {
+}
+p span {
+	color: Blue;
+}
+.link {
+	color: violet;
+}
+/* p mark .link {
+	color: red;
+} */
+/* p span .link {
+	color: crimson;
+} */
+.block .text{
+	color: crimson;
+}
+.block-color{
+	color: red;
+}
+
+.list li{
+	color: black;
+}
+.list >li{
+	color: gray;
+}
+.item a{
+	color: violet;
+}
+.item span{
+	color: Blue;
+}
+#tone {
+	color: rgb(18, 204, 18);
+}
