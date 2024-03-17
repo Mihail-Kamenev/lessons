@@ -1,0 +1,166 @@
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+body {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	font-style: normal;
+	color: #000;
+	line-height: 1.875;
+}
+
+h1 {
+	font-size: 72px;
+	font-weight: 900;
+	color: rgb(45, 165, 45);
+	text-align: center;
+	text-shadow: 3px 3px 3px red, -3px -3px 15px rgb(0, 47, 255), 5px 5px 30px green;
+}
+.lesson h2 {
+	color: rgb(61, 61, 160);
+	text-transform: capitalize;
+	text-shadow: 3px 3px 30px rgb(193, 7, 240);
+}
+.lesson h1 + h2{
+	color: rgb(243, 8, 51);
+	text-shadow: 3px 3px 30px rgb(30, 240, 7);
+}
+.lesson h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+p span {
+	font-family: "Proxima Nova", sans-serif;
+	color: rgb(221, 147, 147);
+	text-transform: uppercase;
+}
+span a {
+	text-transform: lowercase;
+	color: red;
+	text-decoration: underline wavy blue;
+}
+a {
+	font-size: 18px;
+	font-weight: 100;
+	color: rgb(2, 246, 26);
+	text-decoration-line: underline;
+	text-decoration-color: blue;
+	text-decoration-style: dashed;
+
+}
+.lesson  p {
+	font-family: "Rubik", sans-serif;
+	font-size: 20px;
+	text-shadow: 3px 3px 20px rgb(253, 237, 1);
+}
+.lesson .text {
+	font-size: 24px;
+	line-height: 1.2;
+	color: red;
+	font-style: italic;
+	
+}
+p mark {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	text-decoration: underline wavy rgb(3, 243, 3);
+}
+.block .text {
+	color: rgb(17, 220, 17);
+	text-shadow: 3px 3px 30px rgb(30, 240, 7);
+	text-align: right;
+	letter-spacing: 2px;
+}
+.block .title {
+	text-decoration: underline double rgba(255, 0, 0, 0.203);
+	color: rgb(4, 244, 4);
+	font-style: italic;
+	text-align: right;
+}
+.block .text a {
+	color: blue;
+	text-shadow: 3px 3px 30px rgb(193, 7, 240);
+}
+.block p {
+	color: blue;
+	font-style: normal;
+}
+
+.design h2 {
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 10px;
+	text-align: center;
+	text-shadow: 5px 5px 19px rgb(255, 64, 0),-5px -5px 10px rgb(2, 246, 26);
+	color: #f6be05;
+	text-decoration: underline double rgb(223, 127, 127);
+}
+.design h3 {
+	font-size: 40px;
+	color: #2b2929;
+	font-weight: 400;
+	line-height: 115%; /* 46/40 */
+}
+/* img {
+	text-align: center;
+	text-shadow: 3px 3px 50px rgb(253, 1, 1);
+} */
+.furniture-selection .title {
+	/* letter-spacing: 0;
+	text-shadow: none;
+	color: #f6f205;
+	text-decoration: none;
+	text-align: left;
+	font-size: 40px;
+	text-decoration: underline orange;
+	text-shadow: -5px -5px 10px rgb(2, 246, 26);
+	font-style: italic; */
+
+}
+.sub-title {
+	font-weight: 700;
+	font-size: 20px;
+	color: #2b2929;
+	line-height: 1.4;
+
+}
+.list + p {
+color: red;
+font-size: 24px;
+}
+.list {
+font-size: 20px;
+text-shadow: -5px -5px 10px rgb(2, 246, 26);
+line-height: 1.8;
+text-decoration: underline dashed red;
+}
+.footer {
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.header .link{
+	font-size: 30px;
+	text-decoration: none;
+	color: #000;
+	text-transform: capitalize;
+	line-height: 1.8;
+	font-weight: 700;
+	text-decoration: underline blueviolet;
+	letter-spacing: 3px;
+}
+
