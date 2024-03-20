@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+body {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	font-style: normal;
+	color: #000;
+	line-height: 1.875;
+}
+
+/* ============================header========================= */
+.header {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.link {
+	font-size: 20px;
+	text-decoration: underline blue;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: greenyellow;
+	text-shadow: 3px 3px 10px green,-3px -3px 10px green;
+	letter-spacing: 3px;
+	line-height: 1;
+	margin: 0px 0px 20px 50px;
+}
+
+/* ========================================================= */
+.design {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	background-color: #f2f0f0;
+}
+h1 {
+	color: #f3e00a;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 40px;
+	text-shadow: 5px 5px 10px red, -5px -5px 10px red;
+}
+h2 {
+	color: #2b2929;
+	font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.title {
+}
+.choice-bed {
+	margin-bottom: 30px;
+}
+.choice-bed p {
+	margin-bottom: 10px;
+}
+.furniture-selection {
+	margin-bottom: 50px;
+}
+.furniture-selection h2{
+	margin-bottom: 40px;
+}
+.image {
+	margin-bottom: 40px;
+}
+.furniture-selection .text {
+	margin-bottom: 40px;
+}
+.sub-title {
+	font-size: 20px;
+	margin-bottom: 30px;
+	line-height: 1.4;
+	
+}
+.recommended  p{
+	margin-bottom: 20px;
+}
+.recommended {
+	margin-left: 64px;
+}
+/* ==================================krovato========================== */
+
+.krovato {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fff;
+}
+ .title {
+	text-align: center;
+	font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+
+.body {
+	max-width: 1290px;
+	margin: 0 auto;
+}
+.krovato .items {
+	text-align: center;
+	margin: 0 -15px;
+}
+.item {
+	max-width: 300px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 15px;
+}
+.item .title{
+	font-size: 26px;
+	line-height: 1.38;
+	margin-bottom: 20px;
+}
+.icon {
+	width: 170px;
+	margin-bottom: 20px;
+}
+.text {
+	font-size: 16px;
+	line-height: 1.875;
+}
+/* ========================================CORAL================================= */
+.coral {
+	
+}
+.coral .body {
+	margin: 0 auto;
+	max-width: 1920px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color:  rgba(30, 40, 50, 0.05);
+}
+.coral .title {
+	font-family: "Roboto" sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 50px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.coral .content{
+	max-width: 1320px;
+	margin: 0 auto;
+	overflow: visible;
+}
+.coral .items {
+	text-align: center;
+	margin-left: -12px;
+	margin-right: -12px;
+	font-size: 0;
+}
+.card{
+	box-sizing: content-box;
+	padding: 0 12px;
+	max-width: 200px;
+}
