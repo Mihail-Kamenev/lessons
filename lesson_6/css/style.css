@@ -1,0 +1,227 @@
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:regular,500,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+body {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000;
+	line-height: 1.875;
+
+}
+.header {
+	padding: 50px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.header ul {
+	font-size: 0;
+}
+.header li {
+	display: inline-block;
+	font-size: 20px;
+	text-decoration: underline blue;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: greenyellow;
+	text-shadow: -3px -3px 5px green, 3px 3px 5px green,-3px 3px 5px green, 3px -3px 5px green;
+	box-shadow: inset 0px 0px 7px 3px rgba(0, 128, 0, 0.688), 2px 2px 7px 3px rgba(0, 128, 0, 0.688);
+	letter-spacing: 3px;
+	line-height: 1;
+	margin-left: 3px;
+	padding: 10px;
+	border: 2px solid green;
+	border-radius: 5px;
+}
+.design {
+	padding-top: 75px;
+	padding-bottom: 50px;
+	background-color: #f2f0f0;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+	color: #f3e00a;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 40px;
+	text-shadow: 0px 0px 10px red;
+	padding: 10px;
+	outline: 5px solid red;
+	border-radius: 25px;
+	box-shadow: inset 0px 0px 17px 10px red;
+}
+.furniture-selection-title, 
+.choice-bed-title {
+	display: inline-block;
+	color: #2b2929;
+	font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.choice-bed-title {
+	padding: 0 10px;
+	border-top: 3px double blueviolet;
+	border-bottom: 4px solid yellowgreen;
+	border-right: 3px solid greenyellow;
+	border-left: 3px solid greenyellow;
+	border-radius: 10px;
+	opacity: 0.5;
+}
+
+.choice-bed {
+	margin-bottom: 30px;
+}
+.choice-bed-link {
+	visibility: hidden;
+}
+.choice-bed p {
+	margin-bottom: 10px;
+	border-top: 2px solid greenyellow;
+	border-bottom: 3px dashed goldenrod;
+	border-inline: 4px dashed red;
+}
+.furniture-selection h2{
+	margin-bottom: 40px;
+}
+.image {
+	margin-bottom: 40px;
+	max-width: 100%;
+}
+.image + .text {
+	margin-bottom: 20px;
+}
+.sub-title {
+	font-size: 20px;
+	margin-bottom: 30px;
+	line-height: 1.4;
+	font-weight: 700;
+}
+.recommended  p{
+	margin-bottom: 20px;
+	background: url('../img/krovato/vector.svg') 2.66px 2.67px/27px no-repeat;
+	padding-left: 52px;
+}
+/* ======================================================================== */
+.coral {
+	background: url("../img/coral/frame1.png") 0 614.62px no-repeat,
+url("../img/coral/frame.png") 100% 365.8px no-repeat,
+ rgb(239, 238, 238)
+}
+.coral-container {
+	padding: 100px 0;
+	max-width: 1226px;
+	margin: 0 auto;
+}
+.coral-title-big{
+	color: rgb(0, 0, 0);
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 1.41;
+	text-align: center;
+	margin-bottom: 100px;
+	background: url("../img/coral/group98.png ") 44% 50% no-repeat,
+	url("../img/coral/group981.png ") 56% 50% no-repeat;
+}
+.coral-content {
+	display: inline-block;
+	margin-right: 90px;
+	vertical-align: middle;
+	
+	
+}
+.coral-title {
+	font-family: "Roboto",sans-serif;
+	font-size: 74px;
+	font-weight: 300;
+	line-height: 0.74;
+	color: #000;
+	margin-bottom: 56px;
+}
+.coral-text {
+	color: #000;
+  font-size: 30px;
+  font-family: "Roboto",sans-serif;
+  font-weight: 400;
+  line-height: 1.83;
+  text-transform: capitalize;
+  margin-bottom: 66px;
+}
+.coral-body {
+	display: inline-block;
+	vertical-align: middle;
+}
+.coral-picture {
+	border-radius: 180px 0 180px 0;
+	box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+	
+}
+.coral-image {
+	border-radius: 180px 0 180px 0;
+	margin: -20px 18px 20px -18px;
+}
+.coral-button {
+	color: #f2f0f0;
+	padding: 20px;
+	background: url("../img/coral/icon.svg") 26px 50% no-repeat, #000;
+	padding: 19px 26px 19px 64px;
+	font-family: "Roboto", sans-serif;
+	font-size: 29px;
+	font-weight: 400;
+	line-height: 1.17;
+	text-transform: capitalize;
+}
+/* =============================================================== play =========== */
+.play {
+	
+	background: url("../img/play/hologr.png") 0 0/100%, rgb(132, 0, 255);
+}
+.play-container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-bottom: 31px;
+	background: url("../img/play/o.png") 25% -15px no-repeat,url("../img/play/x.png") 47% 0 no-repeat,url("../img/play/p.png") 55% 40% no-repeat,url("../img/play/oa.png") 43% 20% no-repeat,url("../img/play/0.png") 30% 100% no-repeat,url("../img/play/m.png") 40% 95% no-repeat,url("../img/play/k.png") 60% 80% no-repeat,url("../img/play/b.png") 90% 8% no-repeat,url("../img/play/f.png") 90% 53% no-repeat,url("../img/play/o.png") 100% 60% no-repeat,url("../img/play/o.png") 90% 65% no-repeat,url("../img/play/group11.png") 98% 25% no-repeat,url("../img/play/5.png") 21% 45% no-repeat,url("../img/play/pattern.png") 98% 35px no-repeat;
+}
+.play-content {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 600px;
+	margin-right: 133px;
+}
+.play-title {
+	color: rgb(255, 255, 255);
+	font-family:"Quicksand",sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 24px;
+}
+.play-text {
+	color: rgb(255, 255, 255);
+	font-family: "Quicksand",sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.6;
+	margin-bottom: 24px;
+}
+.play-button {
+	padding: 16px 18px;
+	border-radius: 8px;
+	background-color: #FFF;
+}
+.play-image {
+	vertical-align: middle;
+	background: url("../img/play/books.png") 65px 140px no-repeat,url("../img/play/group.png") 10px 250px no-repeat
+}
