@@ -1,0 +1,80 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1;
+}
+ .header-title{
+	font-size: 40px;
+	font-weight: 900;
+	color: rgb(155, 155, 36);
+	text-align: center;
+	padding-top: 80px;
+	margin-bottom: 10px;
+}
+.krovato {
+	padding-bottom: 40px;
+}
+.krovato-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.krovato-container > *{
+	margin-bottom: 50px;
+}
+.krovato-title {
+	font-size: 60px;
+	font-weight: 900;
+	color: blueviolet;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.krovato-image img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+.krovato-image p {
+	display: inline-block;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.krovato-image div:not(:last-child) {
+	margin-bottom: 20px;
+}
+.krovato-icon div:first-child {
+	padding-left: 50px;
+	background: url("../img/icon/arrow-top.svg") left  no-repeat;
+	min-height: 16px;
+}
+.krovato-icon div:nth-child(2){
+	padding-left: 50px;
+	background: url("../img/icon/arrow-down.svg") left  no-repeat;
+	min-height: 16px;
+}
+.krovato-icon  div:last-child p::before{
+	content: "";
+	vertical-align: middle;
+	background: url("../img/icon/question.svg") 0 0 /100% no-repeat;
+	width: 33.33px;
+	height: 33.33px;
+	margin-right: 30px;
+}
+.krovato-icon div:not(:last-child) {
+	margin-bottom: 20px;
+}
+.krovato-content p{
+	font-weight: 900;
+}
+.krovato-content img{
+	max-width: 100%;
+}
+.krovato-content img:not(:last-child) {
+	margin-bottom: 20px;
+}
+.krovato-container  *:last-child{
+	margin-bottom: 0px;
+}
