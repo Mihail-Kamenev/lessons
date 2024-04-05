@@ -1,0 +1,12 @@
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: "ProximaNova";
+	font-size: 20px;
+	background-color: #f8f8f8;
+	color: #2b2929;
+}
