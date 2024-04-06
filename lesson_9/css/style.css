@@ -1,0 +1,28 @@
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: "ProximaNova";
+	font-size: 20px;
+	background-color: #f8f8f8;
+	color: #2b2929;
+}
+.header__container {
+	max-width: 1290px;
+	margin: 0 auto;
+}
+.popular-categories__container {
+	max-width: 1290px;
+	margin: 0 auto;
+}
+.products-popular__container {
+	max-width: 1290px;
+	margin: 0 auto;
+}
+.footer__container {
+	max-width: 1290px;
+	margin: 0 auto;
+}
