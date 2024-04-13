@@ -1,0 +1,251 @@
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: "ProximaNova";
+	font-size: 16px;
+	background-color: #f8f8f8;
+	color: #2b2929;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+/* =============================================== header  ========================= */
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: greenyellow;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	z-index: 50;
+	position: relative;
+}
+.header__container {
+	max-width: 1290px;
+	margin: 0 auto;
+	
+}
+.header__block {
+	margin-left: 40px;
+}
+.header__link {
+	padding: 13px 20px;
+	border-radius: 8px;
+	background-color: rgb(255, 188, 87);
+	font-size: 0;
+}
+.header__link:hover {
+	background-color: rgb(240, 194, 125);
+}
+.header__link:active {
+	background-color: rgb(193, 156, 100);
+}
+.header__icon {
+	display: inline-block;
+	margin-right: 9px;
+}
+.header__text {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	font-family: ProximaNova;
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-transform: capitalize;
+	}
+.header__menu {
+	padding-left: 20px;
+	background-color: #fff;
+}
+.menu {
+	display: none;
+}
+.menu:target {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: inline-block;
+	
+}
+.menu__list {
+	position: relative;
+	z-index: 2;
+	
+}
+.menu__link {
+	position: relative;
+}
+.menu__list:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 3px;
+	height: 100%;
+	background-color: rgb(255, 188, 87);
+	z-index: -2;
+}
+.menu__link {
+	padding: 10px 20px;
+}
+.menu__item {
+	height: 50px;
+}
+.menu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.menu__item:hover .sub-menu {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding-left: 20px;
+}
+.menu__item:hover .menu__link {
+	background-color: rgb(255, 188, 87);
+}
+.menu__item:active .menu__link {
+	background-color: rgb(255, 199, 115);
+}
+.menu__image {
+	width: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.menu__icons {
+	max-width: 100%;
+
+}
+.menu__text {
+	display: inline-block;
+	color: rgb(43, 41, 41);
+	font-family: ProximaNova;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+	vertical-align: middle;
+	margin-right: 15px;
+	width: 161px;
+	text-transform: capitalize;
+}
+.menu__icon {
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sub-menu {
+	display: none;
+	background-color: #fff;
+}
+.sub-menu-list {
+	
+}
+.sub-menu__item {}
+.sub-menu__link {
+	color: rgb(43, 41, 41);
+	font-family: ProximaNova;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 2.1;
+}
+.sub-menu__link:hover {
+	text-decoration: underline;
+}
+.sub-menu__link:active {
+	text-decoration: underline rgb(135, 250, 82);
+}
+/* ==================================== column-popular  ============================== */
+.column-popular {
+	padding-block: 50px;
+}
+.column-popular__container {
+	max-width: 1290px;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+.column-popular__items {
+	max-width: 250px;
+	background-color: #fff;
+	border-radius: 3.2%;
+	overflow: clip;
+	position: relative;
+	font-size: 0;
+	box-shadow: 0 3px 5px 0.5px #f4f1f1;
+}
+
+.column-popular__item {
+	margin: 0 20px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	/* z-index: 4; */
+}
+.column-popular__title {
+	display: inline-block;
+	color: rgb(43, 41, 41);
+	font-family: ProximaNova;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.75;
+}
+.column-popular__number {
+	display: inline-block;
+	color: rgb(177, 177, 177);
+	font-family: ProximaNova;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-left: 130px;
+	text-align: right; 
+}
+.column-popular__images {
+	display: inline-block;
+	position: relative;
+}
+.column-popular__image {
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+.column-popular__images::after {
+	content: "";
+	position: absolute;
+	top: 34%;
+	left: -6.5%;
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	 background-color: rgb(248, 248, 248);
+}
+.column-popular__images::before {
+	content: "";
+	background: url("../img/popular-categories/arrow.svg") 0 0 / 100% no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: 3;
+	border-radius: 50%;
+}
+.column-popular__images:hover::before {
+	box-shadow: 0 0 5px 1px red;
+}
+.column-popular__images:active::before {
+	box-shadow: 0 0 5px 1px green;
+}
+
+
+.footer__container {
+	max-width: 1290px;
+	margin: 0 auto;
+}
