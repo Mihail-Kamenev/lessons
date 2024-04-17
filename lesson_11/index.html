@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+	<title>Lesson 11</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__containeer">
+			<div class="header-link">
+				<a href="#2d">transform 2d</a>
+				<a href="#3d">transform 3d</a>
+				<a href="#bus">bus</a>
+			</div>
+		</div>
+	</header>
+	<main class="page">
+		<section class="transform2d">
+			<div class="transform2d__container">
+				<h1 class="transform2d__title">transform</h1>
+				<h2 id="2d" class="transform2d__sub-title sub-title">2d transform</h2>
+				<div class="transform2d__block block-column">
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--translate">
+							Translate (20px, -15px)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--translate block-column__item--percent">
+							Translate (20%, 15%)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--scale">
+							scale (1.5)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--scale block-column__item--yx">
+							scale (2, 1.1)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--scale block-column__item--small">
+							scale (0.5)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--rotate block-column__item--clockwise">
+							rotate (30deg)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--rotate block-column__item--counter-clockwise">
+							rotate (-30deg)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--rotate block-column__item--y">
+							rotatey (55deg)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--rotate block-column__item--x">
+							rotatex (55deg)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--skew block-column__item--positively">
+							skew (15deg, 10deg)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--skew block-column__item--negative">
+							skew (-15deg, -10deg)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--multiple">
+							skew (-15deg, -10deg) rotate (-30deg) scale (0.5) translate (20px, -15px)
+						</div>
+					</div>
+					<div class="block-column__items">
+						<div class="block-column__item block-column__item--transform-origin">
+							transform-origin: 20px 100px;
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="transform3d">
+			<div class="transform3d__container">
+				<h2 id="3d" class="transform3d__sub-title sub-title">3d transform</h2>
+				<div class="transform3d__block block-item">
+					<div class="block-item__items block-item__items--perspective">
+						<div class="block-item__item block-item__item--translate3d">
+							Perspective-400px. Translate3d (30px, 30px, 30px)
+						</div>
+					</div>
+					<div class="block-item__items block-item__items--perspective">
+						<div class="block-item__item block-item__item--scale3d">
+							Perspective-400px. scale3d (0.5, 0.5, 0.5)
+						</div>
+					</div>
+					<div class="block-item__items block-item__items--perspective">
+						<div class="block-item__item block-item__item--rotate3d-x">
+							Perspective-400px. rotate3dX (45deg)
+						</div>
+					</div>
+					<div class="block-item__items block-item__items--perspective">
+						<div class="block-item__item block-item__item--rotate3d">
+							Perspective-400px. rotate3d ( 2, 2, 2, 45deg)
+						</div>
+					</div>/
+					<div class="block-item__items block-item__items--perspective">
+						<div class="block-item__item block-item__item--matrix3d ">
+							Perspective-400px.matrix3d rotate3d ( 2, 2, 2, 45deg) Translate3d (30px, 30px, 30px) scale3d (0.5,
+							0.5, px)
+						</div>
+					</div>
+					<div class="block-item__items block-item__items--perspective">
+						<div class="block-item__item block-item__item--backface ">
+							Backface-visibility (hidden)/. transform: rotateY(150deg);
+						</div>
+					</div>
+
+					==========================================================================
+
+					<div class="block-item__items block-item__items--perspective block-item__items--perspective-origin">
+						<div class="block-item__item block-item__item--translate3d-origin">
+							perspective-origin:top left (0 0) Translate3d (30px, 30px, 30px)
+						</div>
+					</div>
+					<div class="block-item__items block-item__items--perspective block-item__items--perspective-origin">
+						<div class="block-item__item block-item__item--scale3d-origin">
+							perspective-origin:top left (0 0) scale3d (0.5px, 0.5px, 0.5px)
+						</div>
+					</div>
+					<div class="block-item__items block-item__items--perspective block-item__items--perspective-origin">
+						<div class="block-item__item block-item__item--rotate3d-x-origin">
+							perspective-origin:top left (0 0). rotate3dX (45deg)
+						</div>
+					</div>
+					<div class="block-item__items block-item__items--perspective block-item__items--perspective-origin">
+						<div class="block-item__item block-item__item--rotate3d-origin">
+							perspective-origin:top left (0 0). rotate3d ( 2, 2, 2, 45deg)
+						</div>
+					</div>
+					<div class="block-item__items block-item__items--perspective block-item__items--perspective-origin">
+						<div class="block-item__item block-item__item--matrix3d-origin">
+							perspective-origin matrix3d rotate3d ( 2, 2, 2, 45deg) Translate3d (30px, 30px, 30px) scale3d (0.5,
+							0.5, px)
+						</div>
+					</div>
+					<div
+						class="block-item__items block-item__items--perspective block-item__items--perspective-origin block-item__items--flat">
+						<div class="block-item__item block-item__item--preserve-3d">
+							Transform-style. perspective:400px. transform-style: preserve-3d. transform: rotateY(30deg);
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bus">
+			<div class="bus__container">
+				<h2 id="bus" class="bus__sub-title sub-title">bus</h2>
+				<div class="bus__body">
+					<div class="bus__front-bumper"></div>
+					<div class="bus__rear-bumper"></div>
+					<div class="bus__headlight"></div>
+					<div class="bus__stopak"></div>
+					<div class="bus__bottom bottom-item"></div>
+					<div class="bus__wheell wheell">
+						<div class="wheell__rear">
+							<div class="wheell__one"></div>
+						</div>
+						<div class="wheell__front">
+							<div class="wheell__two"></div>
+						</div>
+					</div>
+					<div class="bus__window window">
+						<div class="window__item"></div>
+						<div class="window__item"></div>
+						<div class="window__item window__item--door">
+							<div class="window__door door">
+								<div class="door__top"></div>
+								<div class="door__bottom">
+									<div class="door__door-handle"></div>
+								</div>
+							</div>
+						</div>
+						<div class="window__item"></div>
+						<div class="window__item"></div>
+					</div>
+					<div class="bus__spots spots-items">
+						<div class="spots-items__item spots-items__item--dot-a"></div>
+						<div class="spots-items__item spots-items__item--dot-b"></div>
+						<div class="spots-items__item spots-items__item--dot-d"></div>
+						<div class="spots-items__item spots-items__item--dot-f"></div>
+						<div class="spots-items__item spots-items__item--dot-g"></div>
+						<div class="spots-items__item spots-items__item--dot-h"></div>
+						<div class="spots-items__item spots-items__item--dot-j"></div>
+						<div class="spots-items__item spots-items__item--dot-k"></div>
+						<div class="spots-items__item-big spots-items__item-big--dot-a"></div>
+						<div class="spots-items__item-big spots-items__item-big--dot-b"></div>
+						<div class="spots-items__item-big spots-items__item-big--dot-s"></div>
+						<div class="spots-items__item-big spots-items__item-big--dot-f"></div>
+						<div class="spots-items__item-big spots-items__item-big--dot-v"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__copy">
+				<p>
+					© KROVATO - Технології сну - 2022. Всі права захищені.
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
