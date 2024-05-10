@@ -1,0 +1,516 @@
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: "ProximaNova";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.87;
+	background-color: #f8f8f8;
+	color: #2b2929;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1 ;
+}
+/* ============================================== lesson  ================================ */
+.lesson:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.lesson__conteiner {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.lesson__title {
+	color: rgb(43, 41, 41);
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.1;
+	margin: 0 20px 30px 20px;
+	padding-top: 50px;
+}
+.form > *:not(:last-child) {
+		margin-bottom: 20px;
+}
+.form__line {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.form__label:not(:last-child) {
+	margin-bottom: 10px;
+}
+.form__input {
+	background-color: #fff;
+	height: 50px;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.form__input::placeholder {
+	opacity: 0.8;
+	transition: text-decoration 0.3s;
+}
+.form__input:hover::placeholder {
+	text-decoration: underline;
+}
+.form__input--color {
+	transition: box-shadow 0.3s;
+}
+.form__input--color:hover {
+	box-shadow: 0 0 0.1px 0.5px #bbbbbb;
+}
+.label {
+	transition: text-decoration 0.3s;
+}
+.form__label--one {
+	transition: text-decoration 0.3s;
+}
+.label:hover {
+	text-decoration: underline;
+}
+.form__label--one:hover {
+	text-decoration: underline;
+}
+.form__input:focus {
+	outline: 2px solid #68666650;
+}
+.form__input:disabled {
+	background-color: #00000017;
+}
+.form__button {
+	padding: 10px 20px;
+	border-radius: 8px;
+	background-color: yellow;
+	transition: background-color 0.5s ;
+}
+.form__button:hover {
+	background-color: rgba(237, 237, 14, 0.96);
+}
+.form__input--color {
+	width: 100px;
+	padding: 0;
+	border-radius: 0;
+}
+
+.form__group:not(:last-child) {
+	margin-bottom: 20px;
+}
+.form__group {
+	border: 2px solid #e3e0e0;
+	padding: 0 15px 15px 15px;
+}
+.form__title {
+	background-color: #b7d4a6;
+	padding: 10px;
+	color: #000;
+}
+.form__group:hover .form__title {
+	text-decoration: underline;
+}
+.form__line select {
+	border: 1px solid #ffffff00;
+	transition: border 0.3s;
+}
+.form__line select:hover {
+	border: 1px solid #d1d1d1;
+} 
+
+/* ================================================================ .registration  =================================================== */
+
+/* ====================================================================== .buyer  ====================================================== */
+
+.registration {
+}
+.registration__conteiner {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.registration__title {
+	color: #2b2929;
+	font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.registration__title:not(:last-child) {
+	margin-bottom: 40px;
+}
+.registration__buyer {
+	max-width: 740px;
+	padding: 27px 30px 30px 30px;
+	background: rgb(255, 255, 255);
+	margin-bottom: 5px;
+}
+.buyer {
+	
+}
+.buyer__body > *{
+	margin-bottom: 20px;
+}
+.buyer__body {
+	
+}
+.content-buyer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	column-gap: 15px;
+}
+.content-buyer__title {
+	flex: 1 1 auto;
+	color: rgb(43, 41, 41);
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.1;
+}
+.content-buyer__icon {
+	width: 60px;
+	height: 60px;
+}
+.buyer-form {
+	
+}
+.form-buyer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 30px;
+}
+.form-buyer__line {
+	flex: 0 1 325px;
+}
+
+.form-buyer__input {
+	border: 1px solid rgb(209, 213, 213);
+	border-radius: 8px;
+	padding: 10px 20px;
+	background: rgb(255, 255, 255);
+
+}
+.form-buyer__input:focus{
+	outline: 2px solid #68666650;
+}
+.form-buyer__input::placeholder {
+color: rgb(83, 83, 83);
+}
+.form-buyer__input:hover::placeholder{
+	text-decoration: underline;
+}
+.buyer__checkbox {
+}
+.checkbox {
+}
+.checkbox__choose {
+
+}
+.checkbox__form {
+	display: flex;
+	align-items: center;
+}
+.checkbox__input {
+	flex: 0 0 24px;
+	width: 24px;
+}
+.checkbox__input::placeholder {
+	color: rgb(83, 83, 83);
+}
+.checkbox__choose{
+	color: rgb(83, 83, 83);
+}
+.checkbox__choose:hover {
+	text-decoration: underline;
+}
+.buyer__body > :last-child{
+margin-bottom: 0;
+}
+
+/* ======================================================= delivery  ================================================== */
+
+/* ======================================================= .delivery-method  ============================================= */
+.registration__delivery {
+	max-width: 740px;
+	padding: 30px;
+	background: rgb(255, 255, 255);
+}
+.registration__delivery:not(:last-child) {
+	margin-bottom: 5px;
+	}
+.delivery-method {
+}
+.delivery-method__body:not(:last-child) {
+	margin-bottom: 30px;
+
+}
+.delivery-method__content:not(:last-child) {
+	margin-bottom: 30px;
+}
+.delivery-method__choose {
+}
+.choose {
+	display: flex;
+	column-gap: 25px;
+	/* text-align: center; */
+}
+.choose__item {
+	flex: 0 1 210px;
+	display: flex;
+	position: relative;
+	cursor: pointer;
+}
+.choose__radio {
+	flex: 0 1 210px;
+	padding: 17px;
+	border: 3px solid rgb(248, 248, 248);
+	border-radius: 8px;
+	background: rgb(255, 255, 255);
+	transition: border-color 0.5s;
+}
+/* .choose__item {
+	position: relative;
+	cursor: pointer;
+} */
+.choose__radio:hover {
+	border-color: rgb(255, 188, 87);
+}
+.choose__input:focus-visible  + .choose__radio {
+	outline: 3px solid rgb(255, 188, 87);
+
+}
+.choose__input:checked  + .choose__radio {
+	border: 3px solid rgb(255, 188, 87);
+}
+.radio {
+	position: relative;
+	width: 210px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+}
+.choose__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.choose__input:checked + .choose__radio .text::before {
+	content: "";
+	background: url('../img/importation/itself.svg') 0 0 / 100% no-repeat;
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+}
+.radio__sub-text {
+	color: #535353;
+	font-size: 15px;
+	line-height: 1.4;
+	text-align: center;
+}
+.text {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+	color: rgb(43, 41, 41);
+}
+.text--itself::before {
+	content: "";
+	background: url('../img/importation/dostavka.svg') 0 0 / 100% no-repeat;
+	flex-basis:  40px;
+	width: 40px;
+	height: 40px;
+}
+.text--mail::before {
+	content: "";
+	background: url('../img/importation/mail.svg') 0 0 / 100% no-repeat;
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+}
+.text--curator::before {
+	content: "";
+	background: url('../img/importation/curator.svg') 0 0 / 100% no-repeat;
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+}
+/* ============================================================== navigation  =============================================== */
+
+.delivery-method__navigation {
+	max-width: 680px;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: #f8f8f8;
+}
+.navigation {
+	display: flex;
+	align-items: center;
+}
+.navigation > * {
+	margin-right: 20px;
+} 
+.navigation__icon {
+	flex-basis: 40px;
+	width: 40px;
+	height: 40px;
+}
+.navigation__addressa >*:not(:last-child) {
+	margin-bottom: 5px;
+}
+.navigation__addressa {
+	margin-right: 89px;
+}
+.navigation__schedule {
+color: rgb(43, 41, 41);
+}
+.navigation__address {
+	color: rgb(43, 41, 41);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.navigation__lactation {
+	color: rgb(255, 255, 255);
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.26;
+	padding: 13px 20px;
+	border-radius: 8px;
+	background: rgb(255, 188, 87);
+}
+.navigation__lactation::before {
+	content: "";
+	background: url("../img/map/map.svg") 0 1px / 100% no-repeat;
+	width: 20px;
+	height: 18px;
+	margin-right: 10px;
+}
+.navigation > *:last-child {
+	margin-right: 0;
+}
+
+/* =================================================== registration__payment .payment-method  ============================================================ */
+
+.registration__payment {
+	max-width: 740px;
+	padding: 30px;
+	background: rgb(255, 255, 255);
+}
+.payment-method:not(:last-child) {
+	margin-bottom: 5px;
+}
+.payment-method__body {
+}
+.payment-method__content:not(:last-child) {
+margin-bottom: 30px;
+}
+
+.payment-method__form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	row-gap: 20px;
+}
+.payment-method__label {
+	display: flex;
+	column-gap: 12px;
+	flex-wrap: wrap;
+	row-gap: 5px;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	transition: text-decoration 0.3s;
+}
+.payment-method__label:hover {
+	text-decoration: underline;
+}
+.payment-method__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.payment-method__input:focus-visible + .payment-method__text {
+	border-bottom: 1px solid rgb(255, 188, 87);
+} 
+.payment-method__input:checked + .payment-method__text::before {
+	background: url("../img/payment/arrow.svg") 0 0 / 100% no-repeat;
+	border: 2px solid rgb(255, 188, 87);
+	background-color: rgb(255, 188, 87);
+}
+.payment-method__text {
+	display: flex;
+	align-items: center;
+}
+.payment-method__text::before {
+	content: "";
+	flex: 0 0 20px;
+	width: 20px;
+	height: 20px;
+	margin-right: 12px;
+	border: 2px solid #d6d3d3;
+	border-radius: 50%;
+}
+.payment-method__icon {
+	max-width: 100%;
+}
+
+/* ========================================================= registration-comment  ======================================================= */
+.registration-comment {
+	max-width: 740px;
+	padding: 30px;
+	background: rgb(255, 255, 255);
+}
+.comment {
+}
+.comment__content:not(:last-child) {
+	margin-bottom: 30px;
+	background: rgb(255, 255, 255);
+}
+.comment__form {
+	
+}
+.comment__textarea {
+	border: 1px solid rgb(209, 213, 213);
+	border-radius: 8px;
+	background: rgb(255, 255, 255);
+	padding: 10px 20px;
+	height: 150px;
+	resize: vertical;
+}
+.comment__textarea:hover::placeholder {
+	text-decoration: underline;
+}
+
+/* ========================================================= .registration__button  ========================================================= */
+.comment__button {
+	color: rgb(255, 255, 255);
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.26;
+	text-transform: uppercase;
+	padding: 13px 106.5px;
+	background-color: rgb(255, 188, 87);
+	border-radius: 8px;
+	margin: 0 auto;
+	transition: background-color 0.3s ;
+}
+.comment__button:hover {
+	background-color: rgb(223, 174, 100);
+}
