@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+	<title>Lesson 14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+		</header>
+		<main class="page">
+			<section class="lesson">
+				<div class="lesson__conteiner">
+					<h2 class="lesson__title">Уроку №14</h2>
+					<form enctype="multipart/form-data" action="#" class="form">
+						<div class="form__line">
+							<label for="text" class="form__label">Введіть своє і'мя</label>
+							<input id="text" name="form[]" type="text" autocomplete="off" maxlength="7" minlength="4"
+								placeholder="Введіть своє і'мя" class="form__input">
+						</div>
+						<div class="form__line">
+							<label for="email" class="form__label">email</label>
+							<input id="email" name="form[]" type="email" autocomplete="off" required placeholder="email"
+								class="form__input">
+						</div>
+						<div class="form__line">
+							<label for="text-01" class="form__label">Введіть своє і'мя</label>
+							<input disabled id="text-01" name="form[]" type="text" autocomplete="off" maxlength="4"
+								minlength="7" placeholder="Введіть своє і'мя" class="form__input">
+						</div>
+						<div class="form__line">
+							<label for="tel" class="form__label">Введіть свій номер телефону</label>
+							<input id="tel" name="form[]" type="tel" autocomplete="off"
+								placeholder="Введіть свій номер телефону" class="form__input">
+						</div>
+						<div class="form__line">
+							<label for="inpud-01" class="form__label">Введіть свій пароль</label>
+							<input id="inpud-01" name="form[]" type="password" autocomplete="off"
+								placeholder="Введіть свій пароль" class="form__input">
+						</div>
+						<div class="form__line">
+							<label for="number" class="form__label">Введіть число</label>
+							<input id="number" name="form[]" type="number" autocomplete="off" placeholder="Введіть число"
+								class="form__input">
+						</div>
+						<div class="form__line">
+							<label for="color" class="form__label">Оберіть колір</label>
+							<input id="color" name="form[]" type="color" value="#f3f708" autocomplete="off"
+							 class="form__input form__input--color">
+						</div>
+						<div class="form__line">
+							<label for="search" class="form__label form__label--date">Пошук</label>
+							<input id="search" name="form[]" class="form__input" type="search" placeholder="Пошук">
+						</div>
+						<div class="form__line">
+							<label for="date" class="form__label form__label--one">Вибор дати</label>
+							<input id="date" name="form[]" class="form__input" type="date">
+						</div>
+						<div class="form__line">
+							<label for="range" class="form__label form__label--one">Вибору значення</label>
+							<input id="range" name="form[]" value="0" class="form__input form__input--range" type="range">
+						</div>
+						<div class="form__line">
+							<div class="form__checkbox checkbox">
+								<input class="checkbox__input" checked id="check" name="form[]" type="checkbox">
+								<label class="checkbox__label label" for="check">Є тачка?</label>
+							</div>
+							<div class="form__checkbox checkbox">
+								<input class="checkbox__input" id="check-2" name="form[]" type="checkbox">
+								<label class="checkbox__label label" for="check-2">Є квартира?</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<fieldset class="form__group">
+								<legend class="form__title">Улюблена марка авто</legend>
+								<div class="form__radio radio-form">
+									<input checked id="model-01" class="radio-form__input" name="model" value="form[]"
+										type="radio">
+									<label class="radio-form__label" for="model-01">Mercedes</label>
+								</div>
+								<div class="form__radio radio-form">
+									<input id="model-02" name="model" class="radio-form__input" value="form[]" type="radio">
+									<label class="radio-form__label" for="model-02">BMW</label>
+								</div>
+								<div class="form__radio radio-form">
+									<input id="model-03" name="model" class="radio-form__input" value="form[]" type="radio">
+									<label class="radio-form__label" for="model-03">Skoda</label>
+								</div>
+							</fieldset>
+							<fieldset class="form__group">
+								<legend class="form__title">Улюблена тваринка</legend>
+								<div class="form__radio radio-form">
+									<input class="radio-form__input" checked id="pet-01" name="pet" value="form[]" type="radio">
+									<label class="radio-form__label" for="pet-01">Cat</label>
+								</div>
+								<div class="form__radio radio-form">
+									<input class="radio-form__input" id="pet-02" name="pet" value="form[]" type="radio">
+									<label class="radio-form__label" for="pet-02">Dog</label>
+								</div>
+							</fieldset>
+						</div>
+						<div class="form__line">
+							<input multiple accept=".jpg, .png" id="file" name="form[]" type="file">
+						</div>
+						<div class="form__line">
+							<select name="form[]">
+								<option>Пункт №1</option>
+								<option>Пункт №2</option>
+								<option selected value="03">Пункт №3</option>
+								<option value="04">Пункт №4</option>
+							</select>
+						</div>
+						<div class="form__line">
+							<button type="submit" class="form__button">submit</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="registration">
+				<div class="registration__conteiner">
+					<h1 class="registration__title">Оформлення замовлення</h1>
+					<div class="registration__buyer buyer">
+						<div class="buyer__body">
+							<div class="buyer__content content-buyer">
+								<h2 class="content-buyer__title">Інформація про покупця</h2>
+								<img class="content-buyer__icon" src="img/icon-info.svg"
+									alt="icon знак оклику в колі верх ногами">
+							</div>
+							<div class="buyer__form">
+								<form action="#" class="form-buyer">
+									<div class="form-buyer__line">
+										<input tabindex="1" name="form[]" type="text" placeholder="Прізвище"
+											class="form-buyer__input">
+									</div>
+									<div class="form-buyer__line">
+										<input tabindex="4" name="form[]" type="tel" autocomplete="off"
+											placeholder="Введіть свій номер телефону" class="form-buyer__input">
+									</div>
+									<div class="form-buyer__line">
+										<input tabindex="2" name="form[]" type="text" placeholder="Ім’я"
+											class="form-buyer__input">
+									</div>
+									<div class="form-buyer__line">
+										<input tabindex="5" name="form[]" type="email" autocomplete="off" required
+											placeholder="email" class="form-buyer__input">
+									</div>
+									<div class="form-buyer__line">
+										<input tabindex="3" name="form[]" type="text" placeholder="По батькові"
+											class="form-buyer__input">
+									</div>
+								</form>
+							</div>
+							<div class="buyer__checkbox checkbox">
+								<form action="#" class="checkbox__form">
+									<input id="checkbox" tabindex="6" type="checkbox" class="checkbox__input">
+									<label for="checkbox" class="checkbox__choose">Отримуватиме замовлення інша людина</label>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="registration__delivery delivery-method">
+						<div class="delivery-method__body">
+							<div class="delivery-method__content content-buyer">
+								<h2 class="content-buyer__title">Вибір способу доставки</h2>
+								<img class="content-buyer__icon" src="img/icon-dostavka.svg" alt="icon машіна в колі">
+							</div>
+							<form action="#" class="delivery-method__choose choose">
+								<div class="choose__item">
+									<input id="choose-01" type="radio" name="choice" value="form[]" class="choose__input">
+									<label for="choose-01" class="choose__radio radio">
+										<span class="radio__text text text--itself">Самовивіз із магазину</span>
+										<span class="radio__sub-text">Бесплатно</span>
+									</label>
+								</div>
+								<div class="choose__item">
+									<input tabindex="7" id="choose-02" type="radio" name="choice" value="form[]"
+										class="choose__input">
+									<label for="choose-02" class="choose__radio radio">
+										<span class="radio__text text text--mail">Доставка Нова Пошта</span>
+										<span class="radio__sub-text">≈ від 500 грн</span>
+									</label>
+								</div>
+								<div class="choose__item">
+									<input id="choose-03" type="radio" name="choice" value="form[]" class="choose__input">
+									<label for="choose-03" class="choose__radio radio">
+										<span class="radio__text text text--curator">Доставка кур'єром</span>
+										<span class="radio__sub-text">≈ від 200 грн</span>
+									</label>
+								</div>
+							</form>
+						</div>
+						<div class="delivery-method__navigation navigation">
+							<img class="navigation__icon" src="img/map/lakatsya.svg" alt="значок лакація">
+							<div class="navigation__addressa">
+								<div class="navigation__schedule">Графік роботи: щодня з 9:00 до 18:00</div>
+								<div class="navigation__address">м. Київ, пров. Ізяславський 52, пов. 2</div>
+							</div>
+							<div class="navigation__item">
+							
+							<a href="#" tabindex="8" class="navigation__lactation">На мапі</a>
+						</div>
+						</div>
+					</div>
+					<div class="registration__payment payment-method">
+						<div class="payment-method__body">
+							<div class="payment-method__content content-buyer">
+								<h2 class="content-buyer__title">Вибір способу оплати</h2>
+								<img class="content-buyer__icon" src="img/icon-oplata.svg" alt="icon гаманець в колі">
+							</div>
+							<fieldset class="payment-method__form">
+								<label class="payment-method__label" for="choice-01">
+									<input tabindex="9" id="choice-01" type="radio" name="method" value="form[]"
+										class="payment-method__input">
+									<span class="payment-method__text">Готівкою при отриманні (Післясплата)</span>
+								</label>
+								<label class="payment-method__label" for="choice-02">
+									<input id="choice-02" type="radio" name="method" value="form[]"
+										class="payment-method__input">
+									<span class="payment-method__text">Оплата карткою на сайті</span>
+									<img class="payment-method__icon" src="img/payment/mastercard.svg" alt="mastercard">
+									<img class="payment-method__icon" src="img/payment/visa.svg" alt="visa">
+								</label>
+								<label class="payment-method__label" for="choice-03">
+									<input id="choice-03" type="radio" name="method" value="form[]"
+										class="payment-method__input">
+									<span class="payment-method__text">Privat Pay</span>
+									<img class="payment-method__icon" src="img/payment/privat-pay-logo.svg"
+										alt="logo privat pay">
+								</label>
+								<label class="payment-method__label" for="choice-04">
+									<input id="choice-04" type="radio" name="method" value="form[]"
+										class="payment-method__input">
+									<span class="payment-method__text">Кредит від Krovato</span>
+								</label>
+								<label class="payment-method__label" for="choice-05">
+									<input id="choice-05" type="radio" name="method" value="form[]"
+										class="payment-method__input">
+									<span class="payment-method__text">Оплата частинами ПриватБанк</span>
+									<img class="payment-method__icon" src="img/payment/privaty-credit-logo.svg"
+										alt="privaty-credit-logo">
+								</label>
+								<label class="payment-method__label" for="choice-06">
+									<input id="choice-06" type="radio" name="method" value="form[]"
+										class="payment-method__input">
+									<span class="payment-method__text">Оплата частинами МоноБанк</span>
+									<img class="payment-method__icon" src="img/payment/mono-bank-logo.svg" alt="mono-bank-logo">
+								</label>
+							</fieldset>
+						</div>
+					</div>
+					<div class="registration-comment comment">
+						<div class="comment__content content-buyer">
+							<h2 class="content-buyer__title">Коментар до замовлення</h2>
+							<img class="content-buyer__icon" src="img/icon-comment.svg" alt="icon машіна в колі">
+						</div>
+						<form action="#" class="comment__form">
+							<textarea tabindex="10" class="comment__textarea" name="form[]"
+								placeholder="Ваш коментар"></textarea>
+							<button tabindex="11" type="submit" class="comment__button">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__copy">
+					<p>
+						© KROVATO - Технології сну - 2022. Всі права захищені.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
