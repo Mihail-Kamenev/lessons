@@ -1,0 +1,141 @@
+.title {
+	/* H2 */
+color: rgb(0, 0, 0);
+font-family: "Roboto", sans-serif;
+font-size: 50px;
+font-weight: 500;
+line-height: 1.18; /* 59/50 */
+text-transform: capitalize;
+	&--center {
+		text-align: center;
+	}
+}
+
+// ====================================================== column-card ========================================================
+.column-card {
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		> *{
+			margin-block-end: 16px;
+		}
+	}
+
+	&__link {
+		display: block;
+		margin-block-end: 18px; 
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 312 / 400;
+		object-fit: cover;
+	}
+
+	&__labels {
+		position: absolute;
+		top: 22px;
+		left: 0;
+		
+	}
+
+	&__label {
+		padding-inline: 12px;
+		padding-block: 4px;
+		background-color: #000;
+		font-size: 12px;
+		color: $whiteColor;
+		font-weight: 600;
+		line-height: 1.33; /* 16/12 */
+		text-transform: uppercase;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__label--red {
+		background-color: $redColor;
+	}
+
+	&__products {
+	}
+	&__item {
+		> *:last-child {
+			margin-block-end: 0px;
+		}
+	}
+}
+.column-card {
+
+	&__title {
+		flex: 1 1 auto;
+		font-weight: 600;
+		line-height: 1.37; /* 22/16 */
+		text-transform: capitalize;
+		padding-inline: 10px;
+	}
+
+}
+.column-card {
+
+	&__link-title {
+	}
+}
+.products-card {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	column-gap: 20px;
+	row-gap: 5px;
+	justify-content: space-between;
+	padding-inline: 10px;
+
+	&__item {
+		color: $greyColor;
+		font-weight: 400;
+		line-height: 1.37; /* 22/16 */
+		text-transform: capitalize;
+	}
+
+	&__price {
+		
+	}
+}
+.price-item {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 12px;
+	row-gap: 5px;
+	flex-direction: column;
+
+	&__real {
+		align-self: end;
+		justify-self: end;
+		line-height: 1.37; /* 22/16 */
+		text-transform: capitalize;
+	}
+	&__discount {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		column-gap: 12px;
+		row-gap: 5px;
+	}
+
+	&__old {
+		color: $greyColor;
+		font-size: 14px;
+		line-height: 1.35; /* 19/14 */
+		text-decoration-line: line-through;
+		text-transform: capitalize;
+	}
+
+	&__current {
+		color: $redColor;
+		line-height: 1.37; /* 22/16 */
+		text-transform: capitalize;
+	}
+}
